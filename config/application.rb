@@ -6,6 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+config.autoload_paths += %W(#{config.root}/app/uploaders)
+
+
 module TtTwitter
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
