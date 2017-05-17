@@ -18,7 +18,8 @@
   <div>
     <p>@<%= @user.username %></p>
     <p><%= tweet.message %></p>
-    <p><%= image_tag current_user.avatar.url %></p>
+    <!-- <p><%#= image_tag current_user.avatar.url %></p> -->
+    <p><%= image_tag(current_user.avatar.url, size: "50x50")%></p>
 
   </div>
 <% end %>

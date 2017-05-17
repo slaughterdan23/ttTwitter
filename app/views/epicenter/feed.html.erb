@@ -7,7 +7,9 @@
         <div>
 	        <p>@<%= tweet.user.username %></p>
 	        <p><%= tweet.message.html_safe %></p>
-          <p><%= image_tag current_user.avatar.url %></p>
+          <!-- <p><%#= image_tag current_user.avatar.url %></p> -->
+          <p><%= image_tag(current_user.avatar.url, size: "50x50")%></p>
+
 
 	     </div>
     <% end %>
